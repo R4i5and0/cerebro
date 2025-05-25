@@ -1,0 +1,47 @@
+/* Paleta de cores */
+:root {
+    --dark-bg: #14041c;
+    --pink-light: #ee92b2;
+    --pink-medium: #c74fac;
+    --black: #0c0414;
+    --blue: #446cd4;
+}
+
+body {
+    background: #14041c;
+    color: white;
+}
+
+.card {
+    background: linear-gradient(135deg, #ee92b2, #c74fac);
+}
+
+.btn-glow {
+    background: linear-gradient(to right, #ee92b2, #446cd4);
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--black);
+}
+
+/* Container de filmes */
+.filmes-container {
+    background: var(--black);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.2);
+}
+
+
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+
+.btn-glow:hover {
+    filter: brightness(1.2);
+}

@@ -1,0 +1,263 @@
+/* Reset e estrutura base */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0d0d1a;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1a1a2e !important;
+}
+
+.nav-link, .navbar-brand {
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #c3a4ff !important;
+}
+
+/* Botão */
+.btn {
+    background-color: #6f42c1;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #5a32a3;
+}
+
+/* Tipografia */
+h1, h2, h3 {
+    color: #ffffff;
+}
+
+/* Animação de digitação */
+.typing {
+    animation: floatCosmic 3s infinite ease-in-out alternate;
+}
+
+@keyframes floatCosmic {
+    from { transform: translateY(-5px); }
+    to { transform: translateY(5px); }
+}
+/* Fundo estrelado */
+.index-body {
+    background: radial-gradient(ellipse at center, #0d0d1a 0%, #000000 100%);
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Estrelas animadas */
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent url('https://raw.githubusercontent.com/VincentGarreau/particles.js/master/demo/media/stars.png') repeat top center;
+    z-index: -1;
+    animation: moveBackground 200s linear infinite;
+}
+
+@keyframes moveBackground {
+    from { background-position: 0 0; }
+    to { background-position: -10000px 5000px; }
+}
+
+/* Parágrafo principal */
+.index-text {
+    font-size: 1.1rem;
+    max-width: 800px;
+    line-height: 1.8;
+    padding: 1rem;
+}
+
+/* Estrelas animadas com CSS puro */
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: transparent;
+    pointer-events: none;
+}
+
+.stars::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow:
+        10vw 20vh #fff, 30vw 80vh #fff, 50vw 10vh #fff,
+        70vw 60vh #fff, 90vw 30vh #fff, 20vw 90vh #fff,
+        40vw 70vh #fff, 60vw 50vh #fff, 80vw 40vh #fff;
+    animation: twinkle 4s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 1; }
+}
+
+
+
+footer {
+    background-color: #1a1a2e;
+    position: relative;
+    z-index: 2;
+}
+
+footer hr {
+    width: 80%;
+    margin: 0 auto 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+footer p {
+    font-size: 0.95rem;
+    margin: 0.5rem 0;
+}
+
+
+/*home */
+.glow-text {
+    text-shadow: 0 0 10px #6f42c1, 0 0 20px #6f42c1, 0 0 30px #6f42c1;
+}
+
+
+/*Sugerir */
+.glow-text {
+    text-shadow: 0 0 8px #0ff, 0 0 16px #0ff, 0 0 24px #0ff;
+}
+.glow-button {
+    box-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4;
+    transition: all 0.3s ease-in-out;
+}
+.glow-button:hover {
+    box-shadow: 0 0 20px #00e5ff, 0 0 30px #00e5ff;
+    transform: scale(1.03);
+}
+
+/* Fundo cósmico adicional */
+.index-body {
+    background: linear-gradient(#0d0d1a, #000000), 
+                url('https://images.unsplash.com/photo-1584270354949-1d6e1d0c7720?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 0;
+}
+
+/* Fundo translúcido no conteúdo */
+main.container {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+    z-index: 1;
+}
+
+/* Botão cósmico */
+.btn {
+    background: linear-gradient(45deg, #6f42c1, #8e44ad, #5a32a3);
+    color: white;
+    border: none;
+    box-shadow: 0 0 15px #6f42c1;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #8e44ad, #6f42c1);
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #c084fc;
+}
+
+/* Título brilhante */
+.typing {
+    text-shadow: 0 0 5px #fff, 0 0 10px #6f42c1, 0 0 20px #6f42c1;
+}
+
+/* Parágrafo */
+.index-text {
+    font-size: 1.15rem;
+    color: #e0dfff;
+}
+
+/* Footer mais integrado */
+footer {
+    background-color: rgba(26, 26, 46, 0.8);
+}
+
+.index-body {
+    background: linear-gradient(#0d0d1a, #000000),
+                url('../img/fundo-cosmos.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 0;
+}
+/* Fundo cósmico adicional */
+.index-body {
+    background: linear-gradient(#0d0d1a, #000000);      
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 0;
+}
+
+/* Fundo translúcido no conteúdo */
+main.container {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+    z-index: 1;
+}
+
+/* Botão cósmico */
+.btn {
+    background: linear-gradient(45deg, #6f42c1, #8e44ad, #5a32a3);
+    color: white;
+    border: none;
+    box-shadow: 0 0 15px #6f42c1;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #8e44ad, #6f42c1);
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #c084fc;
+}
+
+/* Título brilhante */
+.typing {
+    text-shadow: 0 0 5px #fff, 0 0 10px #6f42c1, 0 0 20px #6f42c1;
+}
+
+/* Parágrafo */
+.index-text {
+    font-size: 1.15rem;
+    color: #e0dfff;
+}
+
+/* Footer mais integrado */
+footer {
+    background-color: rgba(26, 26, 46, 0.8);
+}
